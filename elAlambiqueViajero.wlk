@@ -218,7 +218,8 @@ object profesorLocovich {
   
   method cambiarVehiculo() {
     if (self.puedeCambiar() and (not vehiculosQuePuedeCambiar.isEmpty())) {
-      vehiculoActual = vehiculosQuePuedeCambiar.removeAtIndex(0)
+      vehiculoActual = vehiculosQuePuedeCambiar[0]
+      vehiculosQuePuedeCambiar.remove(0)
     }
   }
 }
